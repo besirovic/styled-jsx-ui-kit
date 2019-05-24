@@ -1,4 +1,8 @@
-import { configure } from '@storybook/react';
+import { configure, addDecorator } from '@storybook/react';
+
+import globalStyleDecorator from './globalStyleDecorator';
+
+addDecorator(globalStyleDecorator);
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../src', true, /\.stories\.js$/);

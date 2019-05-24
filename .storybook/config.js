@@ -1,7 +1,9 @@
 import { configure, addDecorator } from '@storybook/react';
+import { addReadme } from 'storybook-readme';
 
 import globalStyleDecorator from './globalStyleDecorator';
 
+addDecorator(addReadme());
 addDecorator(globalStyleDecorator);
 
 // automatically import all files ending in *.stories.js

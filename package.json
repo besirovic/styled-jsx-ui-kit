@@ -14,7 +14,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "styled-jsx": "^3.2.1"
+    "styled-jsx": "^3.2.1",
+    "theming": "^3.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

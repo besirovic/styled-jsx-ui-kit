@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withTheme } from 'theming';
 
-import theme from '../../themes/base';
-
-const Button = ({ color, size, children, ...props }) => (
+const Button = ({ theme, color, size, children, ...props }) => (
   <button {...props}>
     {children}
     <style jsx>{`
@@ -40,6 +39,7 @@ const Button = ({ color, size, children, ...props }) => (
 );
 
 Button.propTypes = {
+  theme: PropTypes.any,
   children: PropTypes.any,
   color: PropTypes.string,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
@@ -52,4 +52,4 @@ Button.defaultProps = {
   disabled: false
 };
 
-export default Button;
+export default withTheme(Button);
